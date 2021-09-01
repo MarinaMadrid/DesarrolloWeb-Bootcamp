@@ -1,0 +1,25 @@
+<div style="margin: 16px">
+  <h2>Países</h2>
+
+  <button style="margin-right: 20px" (click)="ordenaPaises()">Ordenar</button>
+  Población: <input type="text" (input)="onChange($event)" />
+
+  <div style="text-align: left; display: flex;" *ngFor="let pais of paises">
+    <div>
+      <p>{{pais.id}}</p>
+      <img style="margin-right:10px; width : 128px;"
+      src="assets/{{pais.imagen}}">
+    </div>
+
+    <div style="align-self: flex-start; margin-top: 56px;">
+      <div>{{pais.nombre}}</div>
+      <div>{{pais.poblacion}}</div>
+      <div>URL:<a href="{{pais.url}}">{{pais.url}}</a></div>
+    </div>
+
+    <div style="align-self: flex-start; margin-top: 56px;"
+      *ngIf="pais.mostrarInfo">
+      <!--Información extra del pais-->
+    </div>
+  </div>
+</div>
