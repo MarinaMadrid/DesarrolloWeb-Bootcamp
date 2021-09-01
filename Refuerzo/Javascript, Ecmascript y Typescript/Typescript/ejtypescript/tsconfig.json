@@ -1,0 +1,21 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "watch":true, // cada vez que se ejecute un archivo extension TS se va ejecutar el compilador 
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc", //establece el directorio en donde se van a guardar los archivos Js
+        "rootDir": "./src", //establece el directorio en donde se van a encontrar los archivos TS a compilar
+        "sourceMap": true,
+        "declaration": false,
+        "module": "es2020",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es5",
+        "lib": [
+            "es2020",
+            "dom"
+        ]
+    }
+}
