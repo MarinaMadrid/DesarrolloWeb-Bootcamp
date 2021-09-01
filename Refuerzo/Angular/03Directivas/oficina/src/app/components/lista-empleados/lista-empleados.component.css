@@ -1,0 +1,13 @@
+.odd {
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.even {
+  background-color: #92C3C1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}

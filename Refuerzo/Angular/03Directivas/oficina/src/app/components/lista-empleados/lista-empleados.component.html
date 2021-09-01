@@ -1,0 +1,43 @@
+<div class="p-4">
+  <h2>Listado Empleados</h2>
+  <div style="text-align:left" *ngFor="let empleado of listadoEmpleados;
+    let even = even; let odd = odd;">
+    <p [ngClass]="{odd: odd, even : even}">
+      {{empleado.nombre}} {{empleado.apellidos}}
+      <img *ngIf="empleado.departamento == 'Formación'"
+        src="assets/formacion.png" width="48" class="ml-2">
+      <img *ngIf="empleado.departamento == 'Contabilidad'"
+        src="assets/contabilidad.png" width="40" class="ml-2">
+    </p>
+  </div>
+
+  <button class="btn btn-primary"
+  (click)="toggleMostrar()">Mostrar / Ocultar</button>
+
+  <div *ngIf="mostrarForm" class="text-left m-2">
+    <div>
+      <label>Nombre</label>
+      <input class="ml-2" [(ngModel)]="nombre" />
+    </div>
+
+    <div>
+      <label>Apellidos</label>
+      <input class="ml-2" [(ngModel)]="apellidos" />
+    </div>
+
+    <div class="d-flex flex-row">
+      <label>Departamento</label>
+
+      <div class="d-flex align-items-center flex-row">
+        <input type="radio" name="opcion1" value="Formacion" class="ml-2 mr-1"
+        [(ngModel)]="departamento" /> <div>Formación</div>
+      </div>
+      <div class="d-flex align-items-center flex-row">
+        <input type="radio" name="opcion1" value="Contabilidad" class="ml-2 mr-1"
+        [(ngModel)]="departamento" /> <div>Contabilidad</div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="crearNuevoEmpleado()">Nuevo</button>
+  </div>
+</div>
