@@ -1,0 +1,10 @@
+<div [style.background] = "getColor()" class="alert">
+  <div class="d-flex flex-row justify-content-between">
+    <div>
+      <div>{{tarea.mensaje}}</div>
+      <div>{{tarea.fecha}}</div>
+    </div>
+    <button class="btn btn-primary float-right"
+    (click)="completar()">Completar</button>
+  </div>
+</div>

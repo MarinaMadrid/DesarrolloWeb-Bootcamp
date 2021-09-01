@@ -1,0 +1,18 @@
+<div class="list-tasks">
+  <h1>Listado de tareas</h1>
+  <div class="mt-2 mb-2">Formulario</div>
+  <div class="input-group">
+    <input class="form-control" type="text" value="" [(ngModel)]="mensaje">
+    <input class="form-control" type="date" value="" [(ngModel)]="fecha">
+    <input class="form-control" type="number" value="" [(ngModel)]="gradoImportancia">
+    <div class="input-group-append">
+      <button class="btn btn-primary"
+      (click)="crearTarea()">Crear tarea</button>
+    </div>
+  </div>
+</div>
+
+<div class="list-group">
+  <app-todo class="list-group-item"
+  *ngFor="let tarea of tareas" [tarea]="tarea"></app-todo>
+</div>
