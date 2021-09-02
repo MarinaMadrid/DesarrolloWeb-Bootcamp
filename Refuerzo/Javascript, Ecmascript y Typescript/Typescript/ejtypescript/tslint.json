@@ -24,6 +24,7 @@
         "new-parens":false,
         "prefer-const": false,
         "comment-format": false,
-        "radix": false
+        "radix": false,
+        "no-trailing-whitespace": false
     }
 }
