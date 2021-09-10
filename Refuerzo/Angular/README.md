@@ -23,4 +23,4 @@
 
 
 
-* De la parte de refuerzo de Angular no están subidos Inyección avanzada ni Webpack porque fueron ejercicios teóricos sin código.
+* Inyección avanzada ni Webpack no están subidos porque fueron ejercicios teóricos sin código.
