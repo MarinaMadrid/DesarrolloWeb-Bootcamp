@@ -19,11 +19,15 @@ Proyectos de varios lenguajes de programación web básico realizados en el Boot
 13. Internalización
 14. Módulos
 15. Librerías
-16. Inyección avanzada
-17. Webpack
+16. Inyección avanzada *
+17. Webpack *
 18. Despliegue y automatización
 19. Firebase
 20. Testing avanzado
  
     
 - Ejercicios realizados durante las clases sobre Javascript, EcmaScript, TypeScript y Angular.
+
+
+
+* De la parte de refuerzo de Angular no están subidos Inyección avanzada ni Webpack porque fueron ejercicios teóricos sin código.
