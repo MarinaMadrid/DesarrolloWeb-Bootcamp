@@ -1,0 +1,25 @@
+#encabezado{
+    text-align: center;
+    color: red;
+    background-color: aqua;
+    }
+
+.cuerpo{
+    font-weight: bold;
+    color: blue;
+    }
+
+.cuerpo h2{
+font-size: 14;
+color: black;
+}
+
+#pie-de-pagina{
+font-size: 34;
+font-style: italic;
+}
+
+p{
+text-decoration: underline;
+text-align: center;
+}
