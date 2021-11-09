@@ -1,5 +1,5 @@
-# DesarrolloWeb-Bootcamp-Imagina-Ingenia
+# DesarrolloWeb-Bootcamp
 
-Proyectos de desarrollo web realizados en el Bootcamp Full-Stack de Imagina e Ingenia.
+Proyectos de desarrollo web realizados en el Bootcamp Full-Stack.
 
 Los lenguajes de programación empleados son HTML, CSS, JavaScript, EcmaScript, TypeScript y Angular.
